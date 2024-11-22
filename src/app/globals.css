@@ -69,4 +69,14 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  
+  .gradient-text-main {
+    background: linear-gradient(135deg, #FF6FD8, #A55EEA, #4B9EFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-background-main {
+    background: linear-gradient(135deg, #FF6FD8, #A55EEA, #4B9EFF);
+  }
 }
