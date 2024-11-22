@@ -12,11 +12,11 @@ export type MoodKey = keyof typeof AvailableMoods
 
 
 export const MoodColors = {
-   None : " bg-gray-400",
-   Energetic : " bg-gradient-to-r from-orange-400 via-yellow-300 to-red-500",
-   Bored : " bg-gradient-to-r from-gray-400 to-blue-800",
-   Relaxed : " bg-gradient-to-r from-green-400 to-green-800",
-   Angry : " text-white bg-gradient-to-r from-red-600 to-orange-500",
-   Stressed : "text-white bg-gradient-to-r from-purple-600 to-purple-800",
+   None : {background: "#9ca3af"},
+   Energetic : {background: "linear-gradient(to right, #fb923c, #facc15, #ef4444)"},
+   Bored : {background: "linear-gradient(to right, #9ca3af, #1e3a8a)"},
+   Relaxed : {background: "linear-gradient(to right, #4ade80, #065f46)"},
+   Angry : {background:"linear-gradient(to right, #dc2626, #f97316)", color:"white"},
+   Stressed : {background:"linear-gradient(to right, #9333ea, #5b21b6)", color:"white"},
    
 }

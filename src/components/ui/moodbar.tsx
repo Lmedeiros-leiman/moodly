@@ -16,7 +16,7 @@ export default function Moodbar({ mood = "None" }: Props) {
    const text =  (AvailableMoods[mood]).split(" ")
    
 
-   return (<div className={` py-3.5 outline outline-1 outline-zinc-400 shadow-lg rounded-sm ${className}`}>
+   return (<div className="py-3.5 outline outline-1 outline-zinc-400 shadow-lg rounded-sm" style={className}>
       <span className="hidden md:inline">{text[0]}</span>
       <span>{text[1]}</span>
    </div>)
