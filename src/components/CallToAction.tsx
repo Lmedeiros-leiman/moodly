@@ -1,9 +1,25 @@
+'use client'
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { ArrowBigRightDash } from "lucide-react";
+import { UseAuth } from "@/contexts/AuthProvider";
 
 
 export default function CallToAction() {
-   
+
+   const user = UseAuth();
+
+   if (user.Session) {
+      return (
+         <div>
+            <Link href={"/dashboard"}>
+               <Button className=" w-64 py-6 px-8 text-lg rounded-full gradient-background-main">
+                  <span>Move to Dashboard</span> <ArrowBigRightDash size={48} />
+               </Button>
+            </Link>
+         </div>
+      )
+   }
 
    return(<>
       <div className="grid grid-cols-2 gap-4 w-fit mx-auto">
