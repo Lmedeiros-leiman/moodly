@@ -13,10 +13,9 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
-import { createClient } from "@/lib/Supabase/components"
 import { useRouter } from "next/navigation"
 import Fallback from "@/components/fallback"
-import { authRequest, SignInOAuth, SignUserIn } from "../actions"
+import { authRequest, SignInOAuth, SignUserIn } from "@/contexts/AuthProvider"
 
 
 export default function LoginForm() {
@@ -39,7 +38,7 @@ export default function LoginForm() {
     } else {
       setError("")
       setBusy(false)
-      router.push("/dashboard")
+      //router.push("/dashboard")
     }
     setBusy(false)
   }

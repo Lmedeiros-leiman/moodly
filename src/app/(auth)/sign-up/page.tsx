@@ -15,7 +15,7 @@ import Fallback from "@/components/fallback"
 import { useState } from "react"
 import Form from "next/form"
 import { useRouter } from "next/navigation"
-import { authRequest, SignInOAuth, SignUserUp } from "../actions"
+import { authRequest, SignInOAuth, SignUserUp } from "@/contexts/AuthProvider"
 
 
 
