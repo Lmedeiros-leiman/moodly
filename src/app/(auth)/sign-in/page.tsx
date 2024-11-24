@@ -38,7 +38,7 @@ export default function LoginForm() {
     } else {
       setError("")
       setBusy(false)
-      //router.push("/dashboard")
+      router.push("/dashboard")
     }
     setBusy(false)
   }

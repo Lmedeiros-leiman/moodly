@@ -50,6 +50,9 @@ export async function SignInOAuth() {
    });
 }
 
+export async function LogOut() {
+   return await supabase.auth.signOut();
+}
 
 type AuthContextType = {
    Session: Session | null;
